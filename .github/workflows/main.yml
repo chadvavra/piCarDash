@@ -20,9 +20,9 @@ jobs:
           pip install pipenv
           python - m pipenv install --dev --pre --system
           export PYTHONPATH="$PWD"
-      - name: Black Check
-        run: |
-          black --check $PWD
+      # - name: Black Check
+       # run: |
+       #   black --check $PWD
       - name: Unit Tests
         run:
           pytest tests
